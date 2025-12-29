@@ -15,7 +15,7 @@ body {
   font-family: "Montserrat", "Inter";
  
   /* background-color: rgb(255, 255, 255); */
-  /* background-color: #97233f; */
+  background-color: #f9f9f9; 
 }
 
 header {
@@ -322,7 +322,7 @@ header .left .buttons a {
 }
 
 .sect_2 .container h2 {
-  color: rgb(12, 12, 12);
+color: #333;
   text-align: center;
   font-size: 38px;
   text-shadow: 3px 3px 3px rgb(12, 12, 12, 0.2);
@@ -525,12 +525,14 @@ height: 100%;
 .sect_3 .container h2 {
   font-size: 42px;
   text-align: center;
-  text-decoration: underline;
+  color: #333;
 }
 
 .sect_3 .container  h3 {
   text-align: center;
   margin: 100px 0;
+ color :#666;
+ font-size: 32px;
 }
 
 .sect_3 .container .grid {
@@ -548,12 +550,24 @@ height: 100%;
 .sect_3 .container .grid .Card {
   /* border: 4px solid yellow;  */
   padding: 10px 25px;
-  box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+ background-color: white;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
+.sect_3 .container .grid .Card h4 {
+ font-size: 20px;
+}
+
+
+.sect_3 .container .grid .Card a {
+ font-size: 18px;
+ margin: 20px auto;
+ font-weight: bold;
+}
 .sect_3 .container .Card .top {
   display: flex;
   /* border: 4px solid; */
@@ -591,7 +605,7 @@ color:#ff296d;
 /* section 4 */
 
 .sect_4 {
-  margin-top: 10%;
+  margin-top: 25%;
   /* border: 2px solid rgb(72, 255, 0); */
   height: 100vh;
   width: 100%;
@@ -633,11 +647,13 @@ color:#ff296d;
 
 
 .sect_4 .flex-container .grid .card {
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow:0 8px 15px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   gap:20px;
   padding: 20px;
+  background-color: white;
+  border-radius: 12px;
   /* border:2px solid rebeccapurple; */
   /* justify-content: space-between; */
 
@@ -661,12 +677,81 @@ width:100%;
 
 
 
+footer {
+  background: #1a1a1a;
+  color: #ddd;
+  padding: 60px 8% 20px;
+}
+
+footer .haut {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+footer svg{
+  height: 24px;
+  width: 24px;
+}
+footer h4 { 
+  position: relative;
+  color: white; margin-bottom: 20px; font-size: 1.2rem; }
+
+footer ul li { margin-bottom: 10px; }
+
+footer a { color: #bbb; transition: 0.3s; 
+}
+footer a:hover { color: #db3030; }
+
+footer .bas {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+
+footer .footer-social{
+  display: flex;
+    gap: 15px;
+}
+
+
+footer .footer-social .social-links{
+    display: flex;
+    gap: 15px;
+
+}
+
+
+
+
+
+
+
+
+footer h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background:#db3030 ;
+  }
+
+
+
+/* 
 footer{
   margin-top:50px;
   width: 100%;
   position: relative;
   bottom: 0;
-  color:rgba(255, 255, 255, 0.815);
+color:#ddd;
+  background:#1a1a1a;
   background:url(images/sect_2/footer/footer-bg.jpg),rgba(14, 12, 12, 0.5);
 }
 
@@ -674,7 +759,7 @@ footer .container{
   height: 60vh;
   width:95%;
   margin: auto;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -688,7 +773,7 @@ footer .container .haut{
 padding: 20px;
 
 
-  /* border:2px solid orange; */
+  border:2px solid orange;
   height:60%;
 }
 
@@ -731,7 +816,7 @@ footer .entreprise p{
 
 footer .bas{
   width:70%;
-  /* border:2px solid red; */
+  border:2px solid red;
   display:flex;
   justify-content: space-between;
   margin : auto;
@@ -750,4 +835,4 @@ footer .bas{
 footer .footer-social{
   display:flex;
   align-items: center;
-}
+} */
