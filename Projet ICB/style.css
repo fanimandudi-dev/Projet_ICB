@@ -8,9 +8,14 @@
   font-family: "Montserrat", "Inter";
 }
 
+p{
+  text-align: justify;
+}
 body {
   font-family: "Montserrat", "Inter";
-  background-color: rgb(255, 255, 255);
+ 
+  /* background-color: rgb(255, 255, 255); */
+  /* background-color: #97233f; */
 }
 
 header {
@@ -84,7 +89,7 @@ header .left .buttons a {
 /* section */
 /* Hero section */
 .Hero {
-  margin-top: 80px;
+   margin-top: 70px; 
   width: 100%;
   height: 100vh;
 }
@@ -92,19 +97,19 @@ header .left .buttons a {
 /*  le slider */
 
 .Hero .visualiseur_slide {
-  width: 90%;
-  margin: 10px auto;
+  width: 100%;
+  margin: 8px ;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  border-radius: 30px;
-  background: linear-gradient(90deg, #ff296d 0%, #922020 95%);
+  /* border-radius: 30px; */
+  /* background: linear-gradient(90deg, #ff296d 0%, #922020 95%); */
   overflow: hidden;
 }
 
 .Hero .container_slide {
   width: 200%;
   display: flex;
-  transition: transform 3s ease;
-  animation: slide_animation 9s ease-in-out infinite;
+  transition: transform 10s ease;
+  animation: slide_animation 10s ease-in-out infinite;
 }
 
 .Hero .slide {
@@ -113,7 +118,7 @@ header .left .buttons a {
   position: relative;
   display: flex;
   flex-direction: row-reverse;
-  background-image: url(images/section_hero/001.png);
+  background-image: url(images/sect_2/footer/footer-bg.jpg);
 }
 
 .Hero .slide2 {
@@ -126,7 +131,7 @@ header .left .buttons a {
 }
 
 .Hero .slide2 .description {
-  margin-top: 15%;
+  margin-top: 13%;
   margin-left: 40px;
   width: 60%;
   color: rgb(218, 218, 218);
@@ -230,7 +235,7 @@ header .left .buttons a {
   display: flex;
   column-gap: 12px;
   position: absolute;
-  left: 6%;
+  left: 1%;
   bottom: 20%;
   margin-left: 40px;
 }
@@ -284,12 +289,13 @@ header .left .buttons a {
     transform: translateX(-50%);
   }
 
-  75% {
+  85% {
     transform: translateX(-50%);
   }
-
-  100% {
+   100% {
+    
   }
+
 }
 
 /* deuxieme section */
@@ -494,12 +500,17 @@ height: 100%;
   bottom: 23px;
 }
 
+
+
+
+
 /* scetion 3 */
 
 .sect_3 {
-  height: 200vh;
+  height: 250vh;
   width: 100%;
-  border: 2px solid rgb(236, 32, 134);
+/* background-color: rgb(235, 235, 235); */
+  /* border: 2px solid rgb(236, 32, 134); */
  
 }
 
@@ -507,7 +518,7 @@ height: 100%;
   height: 100%;
   width: 90%;
   margin: auto;
-  border: 2px solid rgb(26, 55, 214);
+  /* border: 2px solid rgb(26, 55, 214); */
   margin-top: 30px;
 }
 
@@ -519,25 +530,25 @@ height: 100%;
 
 .sect_3 .container  h3 {
   text-align: center;
-  margin: 50px 0;
+  margin: 100px 0;
 }
 
 .sect_3 .container .grid {
-  border: 2px solid rgb(0, 255, 213);
+  /* border: 2px solid rgb(0, 255, 213); */
   width: 90%;
-  height: 45%;
+  /* height: 45%; */
   margin:  auto;
   display: grid;
-  gap: 12px;
+  gap: 52px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2,auto);
  
 }
 
 .sect_3 .container .grid .Card {
-  border: 4px solid yellow;
-  padding: 10px 15px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  /* border: 4px solid yellow;  */
+  padding: 10px 25px;
+  box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -545,9 +556,20 @@ height: 100%;
 
 .sect_3 .container .Card .top {
   display: flex;
-  border: 4px solid;
+  /* border: 4px solid; */
   flex-direction: column;
   align-items: center;
+}
+
+
+
+.sect_3 .container .Card svg{
+
+height:50px;
+width: 50px;
+color:#ff296d;
+/* ccolor:orange; */
+
 }
 
 .sect_3 .container .Card .texte {
@@ -569,16 +591,17 @@ height: 100%;
 /* section 4 */
 
 .sect_4 {
-  margin-top: 20%;
-  border: 2px solid rgb(72, 255, 0);
+  margin-top: 10%;
+  /* border: 2px solid rgb(72, 255, 0); */
   height: 100vh;
   width: 100%;
 }
 
 .sect_4 .container {
-  border: 2px solid red;
+/* border: 2px solid red; */ 
 
-  width: 90%;
+  width: 96%;
+  
 }
 
 
@@ -586,11 +609,14 @@ height: 100%;
 .sect_4 .container h3 {
  font-size: 32px;
  text-align: center;
- margin-bottom: 10%;
+  margin-bottom: 10%; 
+  margin-left: 5px;
+
+ 
 }
 
 .sect_4 .container .flex-container {
-  border: 2px solid rgb(157, 31, 173);
+  /* border: 2px solid rgb(157, 31, 173); */
   width: 100;
   display: flex;
 }
@@ -598,8 +624,8 @@ height: 100%;
 .sect_4 .flex-container .grid {
   width: 60%;
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: 240px 240px;
+  grid-template-columns: 305px 305px;
+  grid-template-rows: 250px 250px;
   justify-content: flex-end;
   
   gap:30px 50px;
@@ -612,7 +638,7 @@ height: 100%;
   flex-direction: column;
   gap:20px;
   padding: 20px;
-  border:2px solid rebeccapurple;
+  /* border:2px solid rebeccapurple; */
   /* justify-content: space-between; */
 
 }
@@ -630,25 +656,29 @@ height: 100%;
 width:100%;
 
   /* height: 100%; */
-  border:2px solid rgb(235, 114, 15);
+  /* border:2px solid rgb(235, 114, 15); */
 }
 
 
 
 footer{
+  margin-top:50px;
   width: 100%;
-  
-  background: linear-gradient(to bottom left, #f58f8f, #318ac9);
+  position: relative;
+  bottom: 0;
+  color:rgba(255, 255, 255, 0.815);
+  background:url(images/sect_2/footer/footer-bg.jpg),rgba(14, 12, 12, 0.5);
 }
 
 footer .container{
-  height: 80vh;
+  height: 60vh;
   width:95%;
   margin: auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   
 }
 footer .container .haut{
@@ -657,7 +687,8 @@ footer .container .haut{
   column-gap: 25px;
 padding: 20px;
 
-  border:2px solid orange;
+
+  /* border:2px solid orange; */
   height:60%;
 }
 
@@ -685,4 +716,38 @@ footer a{
 footer svg{
   height: 24px;
   margin-left: 10px;
+}
+
+
+footer .coordonne{
+  margin-top: 25px;
+}
+
+
+footer .entreprise p{
+  width:70%;
+}
+
+
+footer .bas{
+  width:70%;
+  /* border:2px solid red; */
+  display:flex;
+  justify-content: space-between;
+  margin : auto;
+  border-radius: 15px;
+  background-color:transparent;
+  box-shadow: 4px 4px 8px rgba(12, 12, 12, 0.2);
+  align-items: center;
+  padding: 5px 30px;
+}
+
+
+
+
+
+
+footer .footer-social{
+  display:flex;
+  align-items: center;
 }
