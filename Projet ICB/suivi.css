@@ -10,6 +10,7 @@
 
 body{
     overflow-x: hidden;
+    line-height: 1.8;
     
 }
 
@@ -401,7 +402,7 @@ transform: rotate(-115deg);
     .testimonials-section {
         padding: 80px 0;
         background-color: #ffffff;
-        border: 2px solid;
+        /* border: 2px solid; */
     }
 
     .testimonials-container {
